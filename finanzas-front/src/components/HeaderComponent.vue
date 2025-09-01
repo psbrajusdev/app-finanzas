@@ -4,7 +4,9 @@ import { RouterLink } from "vue-router";
 
 <template>
   <nav class="navbar">
+    <!--to="/" es con el path, cuando no hay nada es la home por defecto-->
     <RouterLink to="/">Balance</RouterLink>
+    <!--con :to llamo a la varibale name definida en routes.js-->
     <RouterLink :to="{ name: 'Ingresos' }">Ingresos</RouterLink>
     <RouterLink :to="{ name: 'Gastos' }">Gastos</RouterLink>
     <RouterLink :to="{ name: 'Creditos' }">Creditos</RouterLink>
@@ -17,17 +19,9 @@ import { RouterLink } from "vue-router";
   width: 100%;
   background-color: #222;
   padding: 1rem 2rem;
-  display: flex;
+  display: flex; /*con esta instruccion se pone horizontal*/
   gap: 2rem;
   align-items: center;
   box-sizing: border-box;
-}
-
-.navbar a {
-  color: white;
-  text-decoration: none;
-}
-.navbar a:hover {
-  color: #1abc9c;
 }
 </style>

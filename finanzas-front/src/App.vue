@@ -4,6 +4,7 @@ import HeaderComponent from "./components/HeaderComponent.vue";
 
 <template>
   <headerComponent></headerComponent>
+  <!--si la siguiente instruccion no funciona el router-->
   <router-view></router-view>
 </template>
 

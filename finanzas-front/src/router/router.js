@@ -18,4 +18,5 @@ const router = createRouter({
   routes,
 });
 
+//que significa esto?
 export default router;
